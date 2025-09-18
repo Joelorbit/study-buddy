@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="book.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Buddy</title>
+
+  <!-- Enhanced Meta Tags -->
+  <meta name="description"
+    content="Boost productivity with StudyBuddy, your AI-powered companion for Pomodoro focus sessions, daily streak tracking, and smarter studying." />
+  <meta name="keywords" content="Pomodoro, study, focus, productivity, AI, Gemini, streak tracker, student" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            'brand-primary': '#8B5CF6',
+            'brand-secondary': '#EC4899',
+            'dark-bg': '#111827',
+            'dark-card': '#1F2937',
+            'dark-text': '#F9FAFB',
+            'dark-subtle': '#9CA3AF',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #111827;
+      /* dark-bg fallback */
+      background-image: radial-gradient(circle at top, rgba(139, 92, 246, 0.2) 0%, transparent 40%),
+        radial-gradient(circle at bottom, rgba(236, 72, 153, 0.15) 0%, transparent 50%);
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+    "@supabase/supabase-js": "https://aistudiocdn.com/@supabase/supabase-js@^2.45.0",
+    "pdfjs-dist/build/pdf.min.mjs": "https://unpkg.com/pdfjs-dist@4.5.136/build/pdf.min.mjs",
+    "pdfjs-dist/": "https://aistudiocdn.com/pdfjs-dist@^5.4.149/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="font-sans text-dark-text">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
