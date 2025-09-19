@@ -12,7 +12,7 @@ StudyBuddy is a tool designed to help students organize their study sessions, tr
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/studybuddy.git
+   git clone https://github.com/Joelorbit/studybuddy.git
    ```
 2. Navigate to the project directory:
    ```
